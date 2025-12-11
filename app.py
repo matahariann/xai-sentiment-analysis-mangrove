@@ -829,8 +829,7 @@ elif page == "Penjelasan Lokal dengan LIME":
                         sample_text,
                         predict_proba_lime,
                         num_features=10,
-                        labels=[pred_class],
-                        num_samples=200
+                        labels=[pred_class]
                     )
                     
                     st.session_state['lime_results'][selected_idx] = {
